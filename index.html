@@ -2,58 +2,322 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Astha Portfolio</title>
+    <title>Astha Tapriya - Software Developer</title>
     <link rel="stylesheet" href="styles.css" />
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Savate:wght@400;700&display=swap"
-      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
     />
   </head>
   <body>
     <div class="container">
-        <div class="navBar">
-              <img src="images/logo.png" alt="sorry">
-              <div class="hamburger" id="hamburger">&#9776;</div>
-                <div class="menus" id="menus">
-                <a href="#">Home</a>
+        <!-- Navigation Bar -->
+        <nav class="navBar">
+            <img src="images/logo.png" alt="Astha's Logo">
+            <div class="hamburger" id="hamburger">&#9776;</div>
+            <div class="menus" id="menus">
+                <a href="index.html">Home</a>
                 <a href="about.html">About</a>
                 <a href="skills.html">Skills</a>
                 <a href="projects.html">Projects</a>
                 <a href="contact.html">Contact</a>
-                </div>
-        </div>
+            </div>
+        </nav>
 
-        <div class="content">
-                       <div class="top-left">
-                       <p class="para"> I'm </p>
-                        <p class="myname">Astha Tapriya</p>
-                       <p class="profession">Front-End Developer</p>
+        <!-- HERO SECTION -->
+        <section class="hero-section">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <p class="hero-greeting">I'm</p>
+                    <h1 class="hero-name">Astha Tapriya</h1>
+                    <p class="hero-title">Software Developer & Web Developer</p>
+                    <p class="hero-description">
+                        Passionate about building clean, efficient code and creating beautiful web experiences. 
+                        Currently exploring full-stack development and competitive programming.
+                    </p>
+                    
+                    <!-- CTA Buttons -->
+                    <div class="hero-ctas">
+                        <a href="projects.html" class="cta-btn primary-btn">View My Work</a>
+                        <a href="contact.html" class="cta-btn secondary-btn">Get In Touch</a>
+                    </div>
                 </div>
-                <div class="image_box">
-                  <img src="images/hml.png" alt="sorry">
-                  <img src="images/css.png" alt="sorry">
-                  <img src="images/js.jpeg" alt="sorry">
-                  <img src="images/gh.png" alt="sorry">
-                  <img src="images/vs.jpeg" alt="maafi">
-                  <img src="images/cplus.png" alt="maafi">
-              </div>
-              <button class="abt" ><a href="about.html">About Me</a></button>
-        </div>
-       <div class="footerbox">
-                <p class="cpyright">
-                    Copyright    &copy; <b>Astha Tapriya</b> All Rights Reserved
-                </p>
-                <div class="footer_image">
-                         <img src="images/ghub.png" id="img1">
-                        <img src="images/ig.png" id="img2">
-                        <img src="images/linkedln.png" id="img3">
-                        <img src="images/x.png" id="img4">
+
+                <!-- Tech Stack Icons -->
+                <div class="hero-tech-stack">
+                    <p class="tech-label">Tech Stack & Skills</p>
+                    <div class="tech-icons">
+                        <!-- Languages -->
+                        <div class="tech-item" title="C++">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++" class="tech-img">
+                            <span class="tech-name">C++</span>
+                        </div>
+                        <div class="tech-item" title="Java">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" class="tech-img">
+                            <span class="tech-name">Java</span>
+                        </div>
+                        <div class="tech-item" title="JavaScript">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" class="tech-img">
+                            <span class="tech-name">JS</span>
+                        </div>
+                        <div class="tech-item" title="Python">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" class="tech-img">
+                            <span class="tech-name">Python</span>
+                        </div>
+
+                        <!-- Frontend -->
+                        <div class="tech-item" title="HTML5">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" class="tech-img">
+                            <span class="tech-name">HTML</span>
+                        </div>
+                        <div class="tech-item" title="CSS3">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" class="tech-img">
+                            <span class="tech-name">CSS</span>
+                        </div>
+                        <div class="tech-item" title="React">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" class="tech-img">
+                            <span class="tech-name">React</span>
+                        </div>
+
+                        <!-- Backend -->
+                        <div class="tech-item" title="Spring Boot">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt="Spring Boot" class="tech-img">
+                            <span class="tech-name">Spring</span>
+                        </div>
+                        <div class="tech-item" title="Node.js">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" class="tech-img">
+                            <span class="tech-name">Node</span>
+                        </div>
+                        <div class="tech-item" title="Express.js">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="Express" class="tech-img">
+                            <span class="tech-name">Express</span>
+                        </div>
+
+                        <!-- Databases -->
+                        <div class="tech-item" title="MySQL">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" class="tech-img">
+                            <span class="tech-name">MySQL</span>
+                        </div>
+                        <div class="tech-item" title="MongoDB">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB" class="tech-img">
+                            <span class="tech-name">Mongo</span>
+                        </div>
+
+                        <!-- Cloud & DevOps -->
+                        <div class="tech-item" title="AWS">
+                            <img src="images/aws.png" alt="AWS" class="tech-img">
+                            <span class="tech-name">AWS</span>
+                        </div>
+                        <div class="tech-item" title="Docker">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" class="tech-img">
+                            <span class="tech-name">Docker</span>
+                        </div>
+                        <div class="tech-item" title="Git">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" class="tech-img">
+                            <span class="tech-name">Git</span>
+                        </div>
+
+                        <!-- Tools -->
+                        <div class="tech-item" title="VS Code">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code" class="tech-img">
+                            <span class="tech-name">VS Code</span>
+                        </div>
+                        <div class="tech-item" title="IntelliJ IDEA">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/intellij/intellij-original.svg" alt="IntelliJ" class="tech-img">
+                            <span class="tech-name">IntelliJ</span>
+                        </div>
+
+                        <!-- ML & AI -->
+                        <div class="tech-item" title="Flask">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" alt="Flask" class="tech-img">
+                            <span class="tech-name">Flask</span>
+                        </div>
+                        <div class="tech-item" title="scikit-learn">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scikitlearn/scikitlearn-original.svg" alt="scikit-learn" class="tech-img">
+                            <span class="tech-name">Scikit</span>
+                        </div>
+                    </div>
                 </div>
-       </div>
+            </div>
+        </section>
+
+        <!-- WHAT I DO SECTION -->
+        <section class="what-i-do">
+            <div class="section-container">
+                <h2 class="section-title">What I Do</h2>
+                <div class="expertise-grid">
+                    <div class="expertise-card">
+                        <div class="expertise-icon">💻</div>
+                        <h3>Full-Stack Development</h3>
+                        <p>Building complete applications from frontend (React, HTML/CSS/JS) to backend (Spring Boot, Node.js) with databases and APIs.</p>
+                    </div>
+                    <div class="expertise-card">
+                        <div class="expertise-icon">☁️</div>
+                        <h3>Cloud & DevOps</h3>
+                        <p>Deploying and managing production applications on AWS, Docker, Railway, Render. Experienced with CI/CD pipelines and infrastructure setup.</p>
+                    </div>
+                    <div class="expertise-card">
+                        <div class="expertise-icon">🔐</div>
+                        <h3>Data Structures & Algorithms</h3>
+                        <p>Strong foundation in DSA with C++. Solved 250+ problems covering arrays, trees, graphs, and dynamic programming.</p>
+                    </div>
+                    <div class="expertise-card">
+                        <div class="expertise-icon">🤖</div>
+                        <h3>Machine Learning Integration</h3>
+                        <p>Building intelligent systems with Python Flask and scikit-learn. Experience in text classification and model integration into web apps.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- QUICK STATS SECTION -->
+        <section class="quick-stats">
+            <div class="section-container">
+                <h2 class="section-title">By The Numbers</h2>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <h3 class="stat-number" data-target="6">0</h3>
+                        <p class="stat-label">Projects Completed</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3 class="stat-number" data-target="260">0</h3>
+                        <p class="stat-label">DSA Problems Solved</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3 class="stat-number" data-target="12">0</h3>
+                        <p class="stat-label">Tech Skills</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3 class="stat-number" data-target="4">0</h3>
+                        <p class="stat-label">Cloud Platforms</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SKILLS PREVIEW SECTION -->
+        <section class="skills-preview">
+            <div class="section-container">
+                <h2 class="section-title">Key Skills</h2>
+                <div class="skills-preview-grid">
+                    <div class="skill-category">
+                        <h4 class="skill-cat-title">Languages</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">C++</span>
+                            <span class="skill-tag">Java</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">Python</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h4 class="skill-cat-title">Frontend</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">React</span>
+                            <span class="skill-tag">HTML5</span>
+                            <span class="skill-tag">CSS3</span>
+                            <span class="skill-tag">Flexbox & Grid</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h4 class="skill-cat-title">Backend & APIs</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Spring Boot</span>
+                            <span class="skill-tag">Node.js/Express</span>
+                            <span class="skill-tag">REST APIs</span>
+                            <span class="skill-tag">GraphQL</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h4 class="skill-cat-title">Databases & Cloud</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">MySQL</span>
+                            <span class="skill-tag">MongoDB</span>
+                            <span class="skill-tag">AWS</span>
+                            <span class="skill-tag">Docker</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h4 class="skill-cat-title">DevOps & Tools</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Git/GitHub</span>
+                            <span class="skill-tag">Railway</span>
+                            <span class="skill-tag">Netlify</span>
+                            <span class="skill-tag">Postman</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h4 class="skill-cat-title">AI & ML</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Flask</span>
+                            <span class="skill-tag">scikit-learn</span>
+                            <span class="skill-tag">Text Classification</span>
+                            <span class="skill-tag">Model Integration</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="section-cta">
+                    <a href="skills.html" class="cta-btn secondary-btn">See Detailed Skills</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ACHIEVEMENTS SECTION -->
+        <section class="achievements">
+            <div class="section-container">
+                <h2 class="section-title">Achievements & Highlights</h2>
+                <div class="achievements-list">
+                    <div class="achievement-item">
+                        <span class="achievement-icon">🎯</span>
+                        <div class="achievement-content">
+                            <h4>250+ DSA Problems Solved</h4>
+                            <p>Mastered data structures and algorithms in C++, covering arrays, strings, linked lists, trees, graphs, and dynamic programming with focus on optimization.</p>
+                        </div>
+                    </div>
+                    <div class="achievement-item">
+                        <span class="achievement-icon">☁️</span>
+                        <div class="achievement-content">
+                            <h4>Multi-Platform Deployment</h4>
+                            <p>Deployed production-ready full-stack application across 4 cloud platforms (AWS, Railway, Render, Netlify/Aiven) demonstrating strong DevOps expertise.</p>
+                        </div>
+                    </div>
+                    <div class="achievement-item">
+                        <span class="achievement-icon">🏗️</span>
+                        <div class="achievement-content">
+                            <h4>Complete SDLC Demonstration</h4>
+                            <p>Designed and built Smart City Portal showcasing full software development lifecycle: database schema design, REST APIs, frontend development, and deployment.</p>
+                        </div>
+                    </div>
+                    <div class="achievement-item">
+                        <span class="achievement-icon">🤖</span>
+                        <div class="achievement-content">
+                            <h4>ML Integration Expertise</h4>
+                            <p>Integrated machine learning models (scikit-learn) with web applications for intelligent text classification and automated complaint routing in production systems.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footerbox">
+            <p class="cpyright">
+                Copyright &copy; <b>Astha Tapriya</b> All Rights Reserved
+            </p>
+            <div class="footer_image">
+                <a href="https://github.com/AsthaTapriya" target="_blank">
+                    <img src="images/ghub.png" alt="GitHub">
+                </a>
+                <a href="https://www.linkedin.com/in/astha-tapariya-156005320/" target="_blank">
+                    <img src="images/linkedln.png" alt="LinkedIn">
+                </a>
+                <a href="https://x.com" target="_blank">
+                    <img src="images/x.png" alt="X / Twitter">
+                </a>
+                <a href="https://instagram.com" target="_blank">
+                    <img src="images/ig.png" alt="Instagram">
+                </a>
+            </div>
+        </footer>
     </div>
     <script src="portfolio.js"></script>
   </body>

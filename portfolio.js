@@ -1,3 +1,49 @@
+// Animated Counter for Stats Section
+function animateCounter() {
+    const statNumbers = document.querySelectorAll('.stat-number');
+    
+    const observerOptions = {
+        threshold: 0.5,
+        rootMargin: '0px'
+    };
+    
+    const observer = new IntersectionObserver(function(entries) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting && !entry.target.classList.contains('counted')) {
+                const target = parseInt(entry.target.getAttribute('data-target'));
+                const element = entry.target;
+                let current = 0;
+                
+                // Determine the increment based on target value
+                const increment = target > 100 ? Math.ceil(target / 50) : Math.max(1, Math.ceil(target / 20));
+                const duration = 1500; // milliseconds
+                const steps = target / increment;
+                const stepDuration = duration / steps;
+                
+                const counter = setInterval(() => {
+                    current += increment;
+                    if (current >= target) {
+                        element.textContent = target + '+';
+                        element.classList.add('counted');
+                        clearInterval(counter);
+                    } else {
+                        element.textContent = current;
+                    }
+                }, stepDuration);
+                
+                observer.unobserve(entry.target);
+            }
+        });
+    }, observerOptions);
+    
+    statNumbers.forEach(num => {
+        observer.observe(num);
+    });
+}
+
+// Call the function when DOM is loaded
+document.addEventListener('DOMContentLoaded', animateCounter);
+
 const urlParams = new URLSearchParams(window.location.search) ;
 
 

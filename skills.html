@@ -2,157 +2,334 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Skills</title>
+    <title>Skills - Astha Tapriya</title>
     <link rel="stylesheet" href="styles.css" />
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
     />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Savate:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Style+Script&display=swap">
   </head>
   <body>
     <div class="container">
-        <div class="navBar">
-              <img src="images/logo.png" alt="sorry">
-               <div class="hamburger" id="hamburger">&#9776;</div>
-                <div class="menus" id="menus">
+        <!-- Navigation Bar -->
+        <nav class="navBar">
+            <img src="images/logo.png" alt="Astha's Logo">
+            <div class="hamburger" id="hamburger">&#9776;</div>
+            <div class="menus" id="menus">
                 <a href="index.html">Home</a>
                 <a href="about.html">About</a>
                 <a href="skills.html">Skills</a>
                 <a href="projects.html">Projects</a>
                 <a href="contact.html">Contact</a>
-                </div>
-        </div>
-              <div class="skill_page">
-                    <div class="skill_heading">Skills</div>
-                    <div class="skill_info"> Explore the technical and creative skills I’ve mastered across various domains. From coding to design, discover what I bring to the table.</div>
-                    <p class="skill_para">Skill Categories</p>
-                    <div class="my_skills">
-                            <div class="skill_name">
-                                  <div id="skill1" onclick="showSkills('coding')">Coding & Designing Skills </div>
-                                  <div id="skill2" onclick="showSkills('interpersonal')">Interpersonal Skills</div>
-                                  <div id="skill3" onclick="showSkills('tools')">Tools & Technologies</div>
+            </div>
+        </nav>
+
+        <!-- Skills Page Header -->
+        <section class="skills-page-header">
+            <h1 class="skill_heading">My Skills</h1>
+            <p class="skill_info">A comprehensive overview of technical expertise, tools, and competencies I've developed throughout my journey in software development and computer science.</p>
+        </section>
+
+        <!-- Skills Content -->
+        <section class="skills-content">
+            <div class="section-container">
+                <!-- Languages Section -->
+                <div class="skill-category-section">
+                    <h2 class="category-title">📝 Programming Languages</h2>
+                    <p class="category-desc">Core programming languages used for development and competitive programming</p>
+                    <div class="skills-list">
+                        <div class="skill-item-detailed">
+                            <h4>C++</h4>
+                            <p>Advanced proficiency in competitive programming, data structures, and algorithms. 250+ problems solved on LeetCode covering arrays, strings, trees, graphs, and dynamic programming.</p>
+                            <div class="skill-level-bar">
+                                <div class="level-fill" style="width: 95%;"></div>
                             </div>
-                                <div class="skill_details">
-                                     <!-- <div class="hml">
-                                    <div class="skill_line">
-                                       <p class="skill_head">HTML</p>
-                                       <span>0%</span>
-                                    </div>
-                                    <div class="blank_box"></div>
-                                 </div> -->
-
-                                 <!-- <div class="dbms">
-                                    <div class="skill_line">
-                                       <p class="skill_head">DBMS</p>
-                                       <span>0%</span>
-                                    </div>
-                                    <div class="blank_box"></div>
-                                 </div> -->
-
-                                 <!-- <div class="css">
-                                    <div class="skill_line">
-                                       <p class="skill_head">CSS</p>
-                                       <span>0%</span>
-                                    </div>
-                                    <div class="blank_box"></div>
-                                 </div> -->
-
-                                 <!-- <div class="jscript">
-                                    <div class="skill_line">
-                                       <p class="skill_head">JavaScript</p>
-                                       <span>0%</span>
-                                    </div>
-                                    <div class="blank_box"></div>
-                                 </div> -->
-
-                                 <!-- <div class="c">
-                                    <div class="skill_line">
-                                       <p class="skill_head">C++</p>
-                                       <span>0%</span>
-                                    </div>
-                                    <div class="blank_box"></div>
-                                 </div> -->
-
-                                 <!-- <div class="dsa">
-                                    <div class="skill_line">
-                                       <p class="skill_head">DSA</p>
-                                       <span>0%</span>
-                                    </div>
-                                    <div class="blank_box"></div>
-                                 </div> -->
-                           </div>
-
-                           <div class="interpersonal_skills">
-                                     <!-- <div class="tmwrk">
-                                    <div class="skill_line">
-                                       <p class="skill_head">TEAMWORK</p>
-                                       <span>0%</span>
-                                    </div>
-                                    <div class="blank_b"></div>
-                                 </div> -->
-
-                                 <!-- <div class="mngment">
-                                    <div class="skill_line">
-                                       <p class="skill_head">TIME MANAGEMENT</p>
-                                       <span>0%</span>
-                                    </div>
-                                    <div class="blank_b"></div>
-                                 </div> -->
-
-                                 <!-- <div class="adapt">
-                                    <div class="skill_line">
-                                       <p class="skill_head">ADAPTABILITY</p>
-                                       <span>0%</span>
-                                    </div>
-                                    <div class="blank_b"></div>
-                                 </div> -->
-                           </div>
-
-                           <div class="techno">
-                                     <!-- <div class="excl">
-                                    <div class="skill_line">
-                                       <p class="skill_head">MS Excel</p>
-                                       <span>0%</span>
-                                    </div>
-                                    <div class="blank_bo"></div>
-                                 </div> -->
-
-                                  <!-- <div class="vscde">
-                                    <div class="skill_line">
-                                       <p class="skill_head">VS Code</p>
-                                       <span>0%</span>
-                                    </div>
-                                    <div class="blank_bo"></div>
-                                 </div> -->
-
-                                  <!-- <div class="git">
-                                    <div class="skill_line">
-                                       <p class="skill_head">GitHub</p>
-                                       <span>0%</span>
-                                    </div>
-                                    <div class="blank_bo"></div>
-                                 </div> -->
-                           </div>
+                        </div>
+                        <div class="skill-item-detailed">
+                            <h4>Java</h4>
+                            <p>Object-oriented programming, Android application development with all core components (Activities, Services, Broadcast Receivers, Content Providers), and intents.</p>
+                            <div class="skill-level-bar">
+                                <div class="level-fill" style="width: 85%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item-detailed">
+                            <h4>JavaScript</h4>
+                            <p>ES6+, DOM manipulation, Async/Await, fetch API integration, event handling, and interactive web development with vanilla JavaScript and frameworks.</p>
+                            <div class="skill-level-bar">
+                                <div class="level-fill" style="width: 90%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item-detailed">
+                            <h4>Python</h4>
+                            <p>Flask web framework, scikit-learn for machine learning, text classification, model training, and integration with web applications.</p>
+                            <div class="skill-level-bar">
+                                <div class="level-fill" style="width: 80%;"></div>
+                            </div>
+                        </div>
                     </div>
-              </div>
-         <div class="footerbox">
-                <p class="cpyright">
-                    Copyright    &copy; <b>Astha Tapriya</b> All Rights Reserved
-                </p>
-                <div class="footer_image">
-                         <img src="images/ghub.png" id="img1">
-                        <img src="images/ig.png" id="img2">
-                        <img src="images/linkedln.png" id="img3">
-                        <img src="images/x.png" id="img4">
                 </div>
-       </div>
+
+                <!-- Frontend Development Section -->
+                <div class="skill-category-section">
+                    <h2 class="category-title">🎨 Frontend Development</h2>
+                    <p class="category-desc">Creating responsive, interactive, and beautiful user interfaces</p>
+                    <div class="skills-list">
+                        <div class="skill-item-detailed">
+                            <h4>HTML5</h4>
+                            <p>Semantic HTML, accessibility, forms, media elements, and proper DOM structure for modern web applications.</p>
+                            <div class="skill-level-bar">
+                                <div class="level-fill" style="width: 95%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item-detailed">
+                            <h4>CSS3</h4>
+                            <p>Flexbox, CSS Grid, animations, transitions, responsive design, preprocessors, and modern CSS techniques for professional styling.</p>
+                            <div class="skill-level-bar">
+                                <div class="level-fill" style="width: 90%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item-detailed">
+                            <h4>React</h4>
+                            <p>Component-based architecture, hooks, state management, JSX, and building scalable, maintainable frontend applications.</p>
+                            <div class="skill-level-bar">
+                                <div class="level-fill" style="width: 85%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item-detailed">
+                            <h4>Responsive Design</h4>
+                            <p>Mobile-first approach, media queries, CSS Grid & Flexbox for layouts that work seamlessly across all devices and screen sizes.</p>
+                            <div class="skill-level-bar">
+                                <div class="level-fill" style="width: 90%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Backend Development Section -->
+                <div class="skill-category-section">
+                    <h2 class="category-title">⚙️ Backend Development</h2>
+                    <p class="category-desc">Building robust server-side applications and APIs</p>
+                    <div class="skills-list">
+                        <div class="skill-item-detailed">
+                            <h4>Spring Boot</h4>
+                            <p>REST APIs, dependency injection, JPA/Hibernate, JWT authentication, role-based access control, and WebSocket implementation for real-time features.</p>
+                            <div class="skill-level-bar">
+                                <div class="level-fill" style="width: 85%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item-detailed">
+                            <h4>Node.js/Express.js</h4>
+                            <p>Building scalable REST APIs, middleware development, request handling, and asynchronous programming patterns.</p>
+                            <div class="skill-level-bar">
+                                <div class="level-fill" style="width: 80%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item-detailed">
+                            <h4>REST APIs & GraphQL</h4>
+                            <p>RESTful API design principles, CRUD operations, API documentation, and optimized GraphQL queries to reduce over-fetching.</p>
+                            <div class="skill-level-bar">
+                                <div class="level-fill" style="width: 85%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item-detailed">
+                            <h4>Authentication & Security</h4>
+                            <p>JWT authentication, role-based access control, secure session management, and security best practices implementation.</p>
+                            <div class="skill-level-bar">
+                                <div class="level-fill" style="width: 80%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Databases Section -->
+                <div class="skill-category-section">
+                    <h2 class="category-title">🗄️ Databases</h2>
+                    <p class="category-desc">Data management and database design expertise</p>
+                    <div class="skills-list">
+                        <div class="skill-item-detailed">
+                            <h4>MySQL</h4>
+                            <p>Relational database design, schema normalization, complex queries, indexing, and database optimization for production systems.</p>
+                            <div class="skill-level-bar">
+                                <div class="level-fill" style="width: 90%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item-detailed">
+                            <h4>MongoDB</h4>
+                            <p>Document-based databases, NoSQL design patterns, aggregation pipelines, and flexible schema management.</p>
+                            <div class="skill-level-bar">
+                                <div class="level-fill" style="width: 75%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item-detailed">
+                            <h4>Schema Design & Normalization</h4>
+                            <p>Efficient database architecture, normalization principles (1NF, 2NF, 3NF), and optimization for query performance.</p>
+                            <div class="skill-level-bar">
+                                <div class="level-fill" style="width: 85%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cloud & DevOps Section -->
+                <div class="skill-category-section">
+                    <h2 class="category-title">☁️ Cloud & DevOps</h2>
+                    <p class="category-desc">Deployment, infrastructure, and cloud technologies</p>
+                    <div class="skills-list">
+                        <div class="skill-item-detailed">
+                            <h4>AWS (EC2, S3)</h4>
+                            <p>Elastic Compute Cloud for hosting applications, S3 for storage, and AWS infrastructure management for scalable deployments.</p>
+                            <div class="skill-level-bar">
+                                <div class="level-fill" style="width: 80%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item-detailed">
+                            <h4>Docker</h4>
+                            <p>Containerization, Docker image creation, container orchestration, and deployment of applications across environments.</p>
+                            <div class="skill-level-bar">
+                                <div class="level-fill" style="width: 85%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item-detailed">
+                            <h4>Deployment Platforms</h4>
+                            <p>Railway for backend deployment, Render for APIs and services, Netlify for frontend hosting, and Aiven for managed databases.</p>
+                            <div class="skill-level-bar">
+                                <div class="level-fill" style="width: 90%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item-detailed">
+                            <h4>CI/CD & Version Control</h4>
+                            <p>Git/GitHub for version control, continuous integration pipelines, and automated deployment workflows.</p>
+                            <div class="skill-level-bar">
+                                <div class="level-fill" style="width: 85%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tools & Technologies Section -->
+                <div class="skill-category-section">
+                    <h2 class="category-title">🛠️ Tools & Technologies</h2>
+                    <p class="category-desc">Development tools and essential software for productivity</p>
+                    <div class="skills-list">
+                        <div class="skill-item-detailed">
+                            <h4>VS Code</h4>
+                            <p>Advanced code editor with extensions, debugging, integrated terminal, and efficient workflow management.</p>
+                            <div class="skill-level-bar">
+                                <div class="level-fill" style="width: 95%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item-detailed">
+                            <h4>IntelliJ IDEA</h4>
+                            <p>Powerful IDE for Java and Spring Boot development with intelligent code analysis and refactoring tools.</p>
+                            <div class="skill-level-bar">
+                                <div class="level-fill" style="width: 80%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item-detailed">
+                            <h4>Postman</h4>
+                            <p>API testing, request building, environment management, and comprehensive API documentation and testing workflows.</p>
+                            <div class="skill-level-bar">
+                                <div class="level-fill" style="width: 85%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item-detailed">
+                            <h4>Maven</h4>
+                            <p>Build automation, dependency management, and project structure organization for Java applications.</p>
+                            <div class="skill-level-bar">
+                                <div class="level-fill" style="width: 80%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AI & Machine Learning Section -->
+                <div class="skill-category-section">
+                    <h2 class="category-title">🤖 AI & Machine Learning</h2>
+                    <p class="category-desc">Building intelligent systems and ML integration</p>
+                    <div class="skills-list">
+                        <div class="skill-item-detailed">
+                            <h4>Python Flask</h4>
+                            <p>Building lightweight web applications for ML model serving, API endpoints, and integration with data science workflows.</p>
+                            <div class="skill-level-bar">
+                                <div class="level-fill" style="width: 85%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item-detailed">
+                            <h4>scikit-learn</h4>
+                            <p>Machine learning algorithms, text classification, model training & evaluation, and feature engineering for intelligent systems.</p>
+                            <div class="skill-level-bar">
+                                <div class="level-fill" style="width: 80%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item-detailed">
+                            <h4>Text Classification & NLP</h4>
+                            <p>Natural language processing, keyword-based classification, automated categorization, and text preprocessing techniques.</p>
+                            <div class="skill-level-bar">
+                                <div class="level-fill" style="width: 75%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item-detailed">
+                            <h4>Model Integration</h4>
+                            <p>Integrating trained ML models with full-stack applications, real-time predictions, and automated decision-making systems.</p>
+                            <div class="skill-level-bar">
+                                <div class="level-fill" style="width: 80%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Additional Skills Section -->
+                <div class="skill-category-section">
+                    <h2 class="category-title">✨ Additional Skills</h2>
+                    <p class="category-desc">Other important competencies and expertise</p>
+                    <div class="skills-list">
+                        <div class="skill-item-detailed">
+                            <h4>RESTful API Design</h4>
+                            <p>Best practices in API design, HTTP methods, status codes, versioning, and scalable API architecture.</p>
+                            <div class="skill-level-bar">
+                                <div class="level-fill" style="width: 90%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item-detailed">
+                            <h4>Firebase</h4>
+                            <p>Real-time database, authentication, hosting, and serverless functions for rapid application development.</p>
+                            <div class="skill-level-bar">
+                                <div class="level-fill" style="width: 75%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item-detailed">
+                            <h4>Data Structures & Algorithms</h4>
+                            <p>Deep understanding of fundamental CS concepts, algorithm optimization, time/space complexity analysis, and competitive programming.</p>
+                            <div class="skill-level-bar">
+                                <div class="level-fill" style="width: 95%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footerbox">
+            <p class="cpyright">
+                Copyright &copy; <b>Astha Tapriya</b> All Rights Reserved
+            </p>
+            <div class="footer_image">
+                <a href="https://github.com/AsthaTapriya" target="_blank">
+                    <img src="images/ghub.png" alt="GitHub">
+                </a>
+                <a href="https://www.linkedin.com/in/astha-tapariya-156005320/" target="_blank">
+                    <img src="images/linkedln.png" alt="LinkedIn">
+                </a>
+                <a href="https://x.com" target="_blank">
+                    <img src="images/x.png" alt="X / Twitter">
+                </a>
+                <a href="https://instagram.com" target="_blank">
+                    <img src="images/ig.png" alt="Instagram">
+                </a>
+            </div>
+        </footer>
     </div>
     <script src="portfolio.js"></script>
-    <!-- <script src="skills_item.js"></script> -->
   </body>
 </html>

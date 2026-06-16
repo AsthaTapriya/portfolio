@@ -2,89 +2,166 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact</title>
+    <title>Contact - Astha Tapriya</title>
     <link rel="stylesheet" href="styles.css" />
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
     />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Savate:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Style+Script&display=swap">
   </head>
   <body>
     <div class="container">
-        <div class="navBar">
-              <img src="images/logo.png" alt="sorry">
-               <div class="hamburger" id="hamburger">&#9776;</div>
-                <div class="menus" id="menus">
+        <!-- Navigation Bar -->
+        <nav class="navBar">
+            <img src="images/logo.png" alt="Astha's Logo">
+            <div class="hamburger" id="hamburger">&#9776;</div>
+            <div class="menus" id="menus">
                 <a href="index.html">Home</a>
                 <a href="about.html">About</a>
                 <a href="skills.html">Skills</a>
                 <a href="projects.html">Projects</a>
                 <a href="contact.html">Contact</a>
+            </div>
+        </nav>
+
+        <!-- Contact Page Header -->
+        <section class="contact_page">
+            <h1 class="page_title">Get In Touch</h1>
+            <p class="page_desc">I'm always interested in hearing about new projects and opportunities. Whether you have a question or just want to say hello, feel free to reach out!</p>
+        </section>
+
+        <!-- Contact Information & Form Section -->
+        <section class="information">
+            <!-- Contact Info Box - Redesigned -->
+            <div class="contact-info-box">
+                <div class="contact-info-header">
+                    <h3>Contact Information</h3>
+                    <p>Get in touch using any of these methods</p>
                 </div>
-        </div>
-              <div class="contact_page">
-                    <p class="page_title">Contact</p>
-                    <p class="page_desc">Get in touch with me for collaborations, queries, or feedback. Fill out the form below or connect through my social media links.</p>
-              </div>
-              
-              <div class="information">
-                    <div class="admin_info">
-                            <div class="address">
-                                    <img src="images/address.png" alt="sorry">
-                                      <div class="admin_detail">
-                                            <p class="contact_head">Address</p>
-                                            <p class="desc">Geeta Colony Street No.1 Foy Sagar Road, Ajmer Rajasthan 305001</p>
-                                      </div>
-                            </div>
 
-                            <div class="call">
-                                <img src="images/call.png" alt="sorry">
-                                <div class="admin_detail">
-                                        <p class="contact_head">Call Us</p>
-                                      <p class="desc">+91 82099-04360</p>
-                                </div>
-                            </div>
-
-                            <div class="email">
-                                  <img src="images/email.png" alt="sorry">
-                                  <div class="admin_detail">
-                                         <p class="contact_head">Email Me</p>
-                                         <p class="desc">asthatapariya05@gmail.com</p>
-                                  </div>
-                            </div>
+                <div class="contact-items-grid">
+                    <!-- Location -->
+                    <div class="contact-row">
+                        <div class="contact-row-icon">📍</div>
+                        <div class="contact-row-content">
+                            <h4>Location</h4>
+                            <p>Ajmer, Rajasthan, India</p>
+                        </div>
                     </div>
 
-                    <div class="user_info">
-                          <form>
-                                 Your Name <br>
-                                <input type="text" placeholder="Enter First Name" class="form_info"><br><br>
-                            Your Email-ID <br>
-                              <input type="email" placeholder="Enter your Email" class="form_info"><br><br>
-                            Subject <br>
-                                <input type="text" placeholder="Enter Subject" class="form_info"><br><br>
-                            Message <br>
-                                  <textarea rows="5" cols="45" name="description" placeholder="Enter Message"></textarea> <br><br>
-                                         <input type="submit" value="Send Message" class="sub_btn">
-                          </form>
+                    <!-- Email -->
+                    <div class="contact-row">
+                        <div class="contact-row-icon">✉️</div>
+                        <div class="contact-row-content">
+                            <h4>Email</h4>
+                            <a href="mailto:asthatapariya05@gmail.com" class="contact-link">asthatapariya05@gmail.com</a>
+                        </div>
                     </div>
-              </div>
-         <div class="footerbox">
-                <p class="cpyright">
-                    Copyright    &copy; <b>Astha Tapriya</b> All Rights Reserved
-                </p>
-                <div class="footer_image">
-                         <img src="images/ghub.png" id="img1">
-                        <img src="images/ig.png" id="img2">
-                        <img src="images/linkedln.png" id="img3">
-                        <img src="images/x.png" id="img4">
+
+                    <!-- Phone -->
+                    <div class="contact-row">
+                        <div class="contact-row-icon">📞</div>
+                        <div class="contact-row-content">
+                            <h4>Phone</h4>
+                            <a href="tel:+918209904360" class="contact-link">+91 82099-04360</a>
+                        </div>
+                    </div>
+
+                    <!-- Social Media -->
+                    <div class="contact-row">
+                        <div class="contact-row-icon">🔗</div>
+                        <div class="contact-row-content">
+                            <h4>Social Media</h4>
+                            <div class="social-links-compact">
+                                <a href="https://github.com/AsthaTapriya" target="_blank" class="social-link-compact">GitHub</a>
+                                <a href="https://www.linkedin.com/in/astha-tapariya-156005320/" target="_blank" class="social-link-compact">LinkedIn</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-       </div>
+
+                <div class="contact-info-footer">
+                    <p class="footer-text">Available for freelance projects and full-time opportunities</p>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="user_info">
+                <h2 class="form_title">Send Me a Message</h2>
+                <form class="contact_form" action="https://formspree.io/f/your_form_id" method="POST">
+                    <div class="form_group">
+                        <label for="name" class="form_label">Your Name *</label>
+                        <input 
+                            type="text" 
+                            id="name"
+                            name="name"
+                            placeholder="John Doe" 
+                            class="form_info"
+                            required
+                        >
+                    </div>
+                    <div class="form_group">
+                        <label for="email" class="form_label">Your Email *</label>
+                        <input 
+                            type="email" 
+                            id="email"
+                            name="email"
+                            placeholder="your@email.com" 
+                            class="form_info"
+                            required
+                        >
+                    </div>
+
+                    <div class="form_group">
+                        <label for="subject" class="form_label">Subject *</label>
+                        <input 
+                            type="text" 
+                            id="subject"
+                            name="subject"
+                            placeholder="What is this about?" 
+                            class="form_info"
+                            required
+                        >
+                    </div>
+
+                    <div class="form_group">
+                        <label for="message" class="form_label">Message *</label>
+                        <textarea 
+                            id="message"
+                            name="message"
+                            rows="6" 
+                            placeholder="Your message here..." 
+                            class="form_textarea"
+                            required
+                        ></textarea>
+                    </div>
+                    <button type="submit" class="sub_btn">Send Message</button>
+                </form>
+                <p class="form_note">I'll get back to you as soon as possible!</p>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footerbox">
+            <p class="cpyright">
+                Copyright &copy; <b>Astha Tapriya</b> All Rights Reserved
+            </p>
+            <div class="footer_image">
+                <a href="https://github.com/AsthaTapriya" target="_blank">
+                    <img src="images/ghub.png" alt="GitHub">
+                </a>
+                <a href="https://www.linkedin.com/in/astha-tapariya-156005320/" target="_blank">
+                    <img src="images/linkedln.png" alt="LinkedIn">
+                </a>
+                <a href="https://x.com" target="_blank">
+                    <img src="images/x.png" alt="X / Twitter">
+                </a>
+                <a href="https://instagram.com" target="_blank">
+                    <img src="images/ig.png" alt="Instagram">
+                </a>
+            </div>
+        </footer>
     </div>
     <script src="portfolio.js"></script>
-</body>
+  </body>
 </html>
