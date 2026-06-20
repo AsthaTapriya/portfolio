@@ -108,7 +108,8 @@ html, body {
 .website_content {
     width: 100%;
     padding: 3rem 2rem;
-    min-height: calc(100vh - 13vh);
+    min-height: calc(100vh - 20vh);
+    height: auto;
 }
 
 /* PROJECT DETAIL CARDS */
